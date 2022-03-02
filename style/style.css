@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+@font-face
+{
+    font-family: 'titulo';
+    src: url('/MODULO 2/d010/fontes/static/Rokkitt-Thin.ttf') format('opentype');
+    font-weight: normal;
+}
+
+:root
+{
+    --cor0: #121842;
+    --cor1: #1A2359;
+    --cor2: #262D63;
+    --cor3: #064069;
+    --cor4: #135E94;
+    --cor5: #F7F6FB;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    background-color: var(--cor0);
+
+    margin: 0px 0px 0px 0px;
+}
+
+header
+{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor0));
+    color: white;
+    
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.315);
+
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+
+    margin: auto;
+    padding: 10px;
+
+    min-height: 150px;
+}
+
+header > h1
+{
+    font-family: 'titulo';
+    font-size: 4em;
+    
+    margin: 0px 10px 10px 10px;
+
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+header > p
+{
+    font-size: 1.5em;
+    font-family: 'titulo';
+    font-weight: bold;
+
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+header a
+{
+    text-decoration: none;
+
+    color: white;
+
+    font-weight: normal;
+    font-family: 'titulo';
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav
+{
+    background-color: transparent;
+    text-align: center;
+
+    margin: auto;
+
+    font-family: Helvetica, sans-serif;
+}
+
+nav > a
+{
+    color: var(--cor5);
+    padding: 10px;
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    transition-duration: .4 s;
+}
+
+nav > a:hover
+{
+    background-color: var(--cor1);
+    color: rgb(224, 224, 224)
+}
+
+main
+{
+    background-color: white;
+    
+    min-width: 300px;
+    max-width: 1000px;
+
+    font-family: var(--fonte-padrao);
+    font-size: 15px;
+
+    margin: 20px auto;
+    padding: 20px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.637);
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+main h1
+{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+
+    text-align: center;
+    color: var(--cor0);
+}
+
+main h2
+{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    
+    text-align: center;
+    color: var(--cor1);
+}
+
+main h3
+{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--cor0);
+    text-align: left;
+
+
+    padding: 2px 10px 2px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+main h3.titulos
+{
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+}
+
+main picture > img
+{
+    margin: auto;
+    display: block;
+}
+
+main img.foto
+{
+    width: 300px;
+}
+
+main p
+{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+
+main strong
+{
+    color:var(--cor2);
+}
+
+div.video
+{
+    background-color: var(--cor5);
+    margin: 20px;
+    padding: 20px;
+    padding-bottom: 50%;
+
+    position: relative;
+}
+
+div.video > iframe
+{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside
+{
+    padding: 0px;
+    margin-top: 10px;
+
+    box-shadow: 4px 7px 14px 0px rgba(0, 0, 0, 0.096);
+}
+
+aside ul
+{
+    background-color: var(--cor5);
+
+    list-style-position: inside;
+    list-style-type: none;
+    columns:2;
+
+    border-radius: 0px 0px 5px 5px;
+    text-align: left;
+
+
+    padding: 10px 10px 10px 10px;
+
+}
+
+ul a::before
+{
+    content: '\27A4\00A0\00A0';
+    color: var(--cor0)
+}
+
+aside a
+{
+    text-decoration: none;
+    color: var(--cor0);
+}
+
+aside a:hover
+{
+    color: var(--cor3);
+}
+
+
+aside > h3
+{
+    color: var(--cor0);
+    text-align: center;
+    
+    margin-bottom: 0px;
+
+    font-weight: bold;
+
+    background-color: var(--cor5);
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px;
+}
+
+footer
+{
+    background-color: var(--cor1);
+    padding: 5px;
+    font-size: 0.8em;
+
+    text-align: center;
+    color: white;
+    font-family: var(--fonte-padrao);
+
+
+}
+
+footer a
+{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover
+{
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+a.externo:after
+{
+    content: '\00A0\00A0\1F517';
+}
